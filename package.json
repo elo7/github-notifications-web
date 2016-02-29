@@ -1,0 +1,18 @@
+{
+  "name": "github-notifications-web",
+  "version": "1.0.0",
+  "description": "Web version for github notifications",
+  "main": "webapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erika Takahara",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.13.4",
+    "handlebars": "4.0.5",
+    "hbs": "^4.0.0",
+    "mysql": "^2.10.2",
+    "sql": "^0.67.0"
+  }
+}

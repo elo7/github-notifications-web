@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** GITHUB NOTIFICATIONS
+====================================================== **/
+@font-face {
+	font-family: museo-sans;
+	src: url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.eot);
+	src: url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.eot?#iefix) format("embedded-opentype"),
+			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.woff2) format("woff2"),
+			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.woff) format("woff"),
+			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.ttf) format("truetype"),
+			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.svg#museo_sans300) format("svg");
+	font-weight: 300;
+	font-style: normal
+}
+
+@font-face {
+	font-family: museo_-sans;
+	src: url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.eot);
+	src: url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.eot?#iefix) format("embedded-opentype"),
+			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.woff2) format("woff2"),
+			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.woff) format("woff"),
+			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.ttf) format("truetype"),
+			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.svg#museo_sans500) format("svg");
+	font-weight: 500;
+	font-style: normal
+}
+
+html {
+	font-family: museo-sans, sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+}
+
+a, a:visited, a:hover {
+	color: #7d7873;
+}
+
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	margin-right: 2em;
+}
+
+.logo a {
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: #95918d;
+}
+
+.logo a em {
+	font-size: 2rem;
+	color: #524947;
+}
+
+.menu {
+	flex: 1;
+	border-bottom: 2px solid #bcbab7;
+}
+
+.menu li:first-child {
+	padding-left: 0;
+}
+
+.menu li {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1em 1em;
+}
+
+.menu li a {
+	text-decoration: none;
+}
