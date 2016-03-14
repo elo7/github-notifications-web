@@ -6,8 +6,15 @@ require('./app/helpers.js');
 var controller = require('./app/controller.js');
 var api = require('./app/api.js');
 var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+var bodyParser = require('body-parser');
 
 var app = express();
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
 /* Template definitions */
 app.engine('hbs', hbs.express4({
   partialsDir: __dirname + '/views/partials',
@@ -30,6 +37,7 @@ app.get('/labels', controller.listLabels);
 app.post('/api/notification', api.postNotification);
 app.get('/api/notification/list', api.listNotification);
 app.get('/api/notification/:id', api.notification);
+app.post('/api/webhook/notifications', api.webhook);
 
 /* Server */
 app.listen(config.port, function() {

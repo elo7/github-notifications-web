@@ -15,7 +15,7 @@ module.exports = {
 		db.sql(query, success, error);
 	},
 
-	post: function (notification, success, error) {
+	post: function (label, success, error) {
 		var insert = labels.insert(label).toQuery();
 		db.sql(insert, success, error);
 	},

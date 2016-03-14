@@ -10,6 +10,7 @@
   "author": "Erika Takahara",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "4.13.4",
     "express-hbs": "0.8.4",
     "handlebars": "4.0.5",

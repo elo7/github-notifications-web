@@ -10,7 +10,7 @@ module.exports = {
 		db.sql(query, success, error);
 	},
 
-	post: function (notification, success, error) {
+	save: function (notification, success, error) {
 		var insert = notifications.insert(notification).toQuery();
 		db.sql(insert, success, error);
 	},
