@@ -1,0 +1,27 @@
+<h1>Lista de notificações</h1>
+{{#if notifications}}
+	<table>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Label</th>
+				<th>Violação</th>
+				<th>Data de criação</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each notifications}}
+				<tr>
+					<td>{{id}}</td>
+					<td>{{name}}</td>
+					<td>{{violation}}</td>
+					<td>{{formatDate created_at}}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+
+	{{> pagination}}
+{{else}}
+	<p>Sem notificações =(</p>
+{{/if}}

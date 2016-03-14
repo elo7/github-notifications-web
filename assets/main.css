@@ -58,11 +58,11 @@ table {
 			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.ttf) format("truetype"),
 			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-300-webfont.svg#museo_sans300) format("svg");
 	font-weight: 300;
-	font-style: normal
+	font-style: normal;
 }
 
 @font-face {
-	font-family: museo_-sans;
+	font-family: museo-sans;
 	src: url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.eot);
 	src: url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.eot?#iefix) format("embedded-opentype"),
 			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.woff2) format("woff2"),
@@ -70,26 +70,57 @@ table {
 			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.ttf) format("truetype"),
 			 url(//images.elo7.com.br/assets/v3/fonts/museo-sans-500-webfont.svg#museo_sans500) format("svg");
 	font-weight: 500;
-	font-style: normal
+	font-style: normal;
 }
 
 html {
 	font-family: museo-sans, sans-serif;
 	font-size: 16px;
+	font-weight: 300;
+	color: #7d7873;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 500;
+	color: #524947;
 }
 
 a, a:visited, a:hover {
 	color: #7d7873;
 }
 
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+table {
+	border-top: 2px solid #7d7873;
+	border-bottom: 2px solid #7d7873;
+	width: 100%;
+}
+
+table th {
+	color: #524947;
+	font-weight: 500;
+	padding: 0.5em;
+	border-bottom: 2px solid #7d7873;
+	text-align: left;
+}
+
+table td {
+	padding: 0.5em;
+	border-bottom: 1px solid #7d7873;
+}
+
 .container {
 	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-right: 4%;
+	padding-left: 4%;
 }
 
 header {
@@ -131,4 +162,9 @@ header {
 
 .menu li a {
 	text-decoration: none;
+}
+
+.main > h1, .main > h2 {
+	margin-top: 1em;
+	margin-bottom: 1em;
 }

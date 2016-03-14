@@ -1,0 +1,21 @@
+<h1>Lista de labels</h1>
+{{#if labels}}
+	<table>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Label</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each labels}}
+				<tr>
+					<td>{{id}}</td>
+					<td><a href='/notifications/label/{{id}}'>{{name}}</a></td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+{{else}}
+	<p>Sem labels cadastradas =(</p>
+{{/if}}
